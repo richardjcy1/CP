@@ -5,6 +5,12 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const int mod = 1e9 + 7;
 
+/*
+key observation:
+dp[i][j]:use first j chars of words to form first i chars of target number of ways
+
+*/
+
 class Solution {
 public:
     int numWays(vector<string>& words, string target) {
