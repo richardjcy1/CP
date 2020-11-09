@@ -5,7 +5,14 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const int mod = 1e9 + 7;
 
-
+/*
+key observation:
+pattern a1, a1+a2,a1+a2+a3...
+keep prefix sum + track max prefix sum in each operation
+traverse the prefix sum: ans = max(ans, cur + max_prefix)
+T: O(n)
+S: O(n)
+*/
 int main()
 {
     ios::sync_with_stdio(false);

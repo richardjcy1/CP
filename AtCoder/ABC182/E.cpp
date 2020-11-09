@@ -5,7 +5,13 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const int mod = 1e9 + 7;
 
+/*
+observation 1:
+for each bulb, check nearest other bulb or block -> problem: bulbs on different row and col will have overlapping squares
 
+observation 2:
+check for each square, if on the same row/col there is a bulb at the nearest position. if so, this square is lit up; otherwise not
+*/
 int main()
 {
     ios::sync_with_stdio(false);

@@ -5,6 +5,14 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const int mod = 1e9 + 7;
 
+/*
+divisibility of 3: sum of each digit is divisible by 3
+sum == 0 -> ok
+sum == 1 -> remove 1 digit (mod 1) or remove 2 digits (mod 2) if possible
+sum == 2 -> remove 1 digit (mod 2) or remove 2 digits (mod 1) if possible
+T: O(n)
+S: O(1)
+*/
 
 int main()
 {
