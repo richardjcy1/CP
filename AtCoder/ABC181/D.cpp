@@ -5,6 +5,15 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const int mod = 1e9 + 7;
 
+/*
+math
+
+key observation: multiple of 8 -> last three digits is multiple of 8
+8 | 100*a[n-3]+10*a[n-2]+a[m-1]
+
+count the frequency of each digit from 1 to 9
+then check 1 digit, 2 digits, 3 digits case
+*/
 
 int main()
 {

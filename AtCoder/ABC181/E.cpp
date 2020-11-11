@@ -5,6 +5,16 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const int mod = 1e9 + 7;
 
+/*
+greedy + math
+
+key observation: always choose adjacent pairs to get the minimum sum
+sort the array and insert the element in the right position in sorting order
+
+keep prefix and suffix pair sum to reduce complexity
+divide odd and even case
+n == 1 edge case -> traverse
+*/
 
 int main()
 {
