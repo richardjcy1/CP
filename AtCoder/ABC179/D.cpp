@@ -5,6 +5,13 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const int mod = 998244353;
 
+/*
+meeting room problem:
+
+use a hashmap to count different increments
+starting point edge case
+traverse the entire array and count cumulative results
+*/
 
 int main()
 {
