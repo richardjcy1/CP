@@ -5,6 +5,18 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const int mod = 1e9 + 7;
 
+/*
+Boring numbers (Digit DP)
+
+key observation: 
+within a range find counts of satisfied numbers
+
+dfs(pos, lead, even, limit): start at pos, whether it is first digit, current should be even/odd, at limit
+
+we can have several leading zeroes before actual non-zero digit occurs. so we need to use lead to mark.
+
+*/
+
 string s;
 int n;
 ll dp[20][2][2][2];
