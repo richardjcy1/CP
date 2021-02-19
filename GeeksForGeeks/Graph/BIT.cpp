@@ -1,22 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long ll;
+
 struct BIT
 {
-    vector<int> bit;
-    int n;
+    vector<ll> bit;
+    ll n;
     BIT() {init(-1);}
-    BIT(int n_) {init(n_);}
-    void init(int n_)
+    BIT(ll n_) {init(n_);}
+    void init(ll n_)
     {
         n = n_;
         bit.clear();
         bit.resize(n + 1, 0);
     }
     
-    int sum(int i)
+    ll sum(ll i)
     {
-        int s = 0;
+        ll s = 0;
         while (i > 0)
         {
             s += bit[i];
@@ -25,7 +27,7 @@ struct BIT
         return s;
     }
     
-    void add(int i, int x)
+    void add(ll i, ll x)
     {
         if (i == 0) return;
         while (i <= n)
@@ -35,12 +37,12 @@ struct BIT
         }
     }
     
-    int sum0(int i)
+    ll sum0(ll i)
     {
         return sum(i + 1);
     }
     
-    void add0(int i, int x)
+    void add0(ll i, ll x)
     {
         add(i + 1, x);
     }
