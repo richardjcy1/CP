@@ -1,0 +1,9 @@
+# Ignore all
+*
+
+# Unignore files with specific extensions
+!*.cpp
+!*.txt
+
+# Unignore all dirs
+!*/
