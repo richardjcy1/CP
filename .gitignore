@@ -1,8 +1,9 @@
-# Ignore Mac system files
-.DS_Store
+# Ignore all
+*
 
-# Ignore executables
-.o
-.so
-.a
-.bin
+# Unignore files with specific extensions
+!*.cpp
+!*.txt
+
+# Unignore all dirs
+!*/
