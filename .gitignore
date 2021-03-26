@@ -4,6 +4,7 @@
 # Unignore files with specific extensions
 !*.cpp
 !*.txt
+!*.py
 
 # Unignore all dirs
 !*/
